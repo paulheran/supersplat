@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supersplat Viewer</title>
+
+  <!-- Twitter/X Player Card -->
+  <meta name="twitter:card" content="player">
+  <meta name="twitter:title" content="Supersplat 3D Viewer">
+  <meta name="twitter:description" content="Interact with a Supersplat 3D scene directly in your feed!">
+  <meta name="twitter:image" content="https://yourdomain.com/thumbnail.jpg">
+  <meta name="twitter:player" content="https://yourusername.github.io/yourrepo/player-frame.html">
+  <meta name="twitter:player:width" content="1280">
+  <meta name="twitter:player:height" content="720">
+
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      font-family: sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 1280px;
+      aspect-ratio: 16 / 9;
+      border: none;
+      margin: 20px 0;
+    }
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #1da1f2;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    a.button:hover {
+      background: #0d8ddb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Supersplat 3D Viewer</h1>
+    <p>Interact with the 3D scene below. If it doesn’t load, click the button to open it directly on Supersplat.</p>
+
+    <!-- Responsive Supersplat iframe -->
+    <iframe src="player-frame.html"></iframe>
+
+    <!-- Fallback button -->
+    <a class="button" href="https://superspl.at/s?id=5ab85ac9" target="_blank" rel="noopener noreferrer">
+      Open Full Scene
+    </a>
+  </div>
+</body>
+</html>
